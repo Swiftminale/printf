@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_hex - prints an hexgecimal number.
+ * print_HEX - prints an hexgecimal number.
  * @val: arguments.
  * Return: counter.
  */
-int print_hex(va_list val)
+int print_HEX(va_list val)
 {
 int i;
 int *array;
@@ -26,7 +26,7 @@ tem /= 16;
 for (i = counter - 1; i >= 0; i--)
 {
 if (array[i] > 9)
-array[i] = array[i] + 39;
+array[i] = array[i] + 7;
 _putchar(array[i] + '0');
 }
 free(array);

@@ -7,13 +7,20 @@
 int _printf(const char * const format, ...)
 {
 convert p[] = {
-{"%s", print_s}, {"%c", print_c},
+{"%s", print_s},
+{"%c", print_c},
 {"%%", print_37},
-{"%i", print_i}, {"%d", print_d}, {"%r", print_revs},
-{"%R", print_rot13}, {"%b", print_bin},
+{"%i", print_i}, 
+{"%d", print_d}, 
+{"%r", print_revs},
+{"%R", print_rot13}, 
+{"%b", print_bin},
 {"%u", print_unsigned},
-{"%o", print_oct}, {"%x", print_hex}, {"%X", print_HEX},
-{"%S", print_exc_string}, {"%p", print_pointer}
+{"%o", print_oct}, 
+{"%x", print_hex}, 
+{"%X", print_HEX},
+{"%S", print_exc_string}, 
+{"%p", print_pointer}
 };
 va_list args;
 int i = 0, j, length = 0;
